@@ -28,6 +28,8 @@ def print_table(nodes: List[dict], verbose: bool = False):
 
     columns.sort(key=column_sort)
 
+    # force_terminal will break tee
+    # console = Console(force_terminal=True)
     console = Console()
 
     table = Table(show_header=True,

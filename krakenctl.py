@@ -28,6 +28,11 @@ def main():
         "node_info": node_list,
     }
 
+    # print(getattr(sys.std, "rich_proxied_file", sys.stdin))
+    # print(sys.stdout.isatty())
+    # print(str(sys.argv))
+    # print(dir(sys.stdout))
+
     argument_manager = ArgumentManager(function_map, "cli-layout.yaml")
     argument_manager.parse_args()
 
